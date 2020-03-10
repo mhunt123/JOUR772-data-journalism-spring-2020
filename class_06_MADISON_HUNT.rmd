@@ -64,19 +64,19 @@ Take the following steps to set up your document:
 ```{r}
 # Load the packages.  You only need to install first if you've never loaded them on this machine.
 
-install.packages("arcos")
+#install.packages("arcos")
 library(arcos)
 
 library(tidyverse)
 library(janitor)
 
-install.packages("lubridate")
+#install.packages("lubridate")
 library(lubridate)
 
-install.packages("scales")
+#install.packages("scales")
 library(scales)
 
-install.packages("ggrepel")
+#install.packages("ggrepel")
 library(ggrepel)
 ```
 
