@@ -74,16 +74,16 @@ We're loading four packages today: the Tidyverse (for general data science goodn
 
 **Task**: In the code block below, load the three packages we'll need for today. 
 ```{r}
+#Load Tidyverse, Janitor and arcos
+#Install packages for  Tidyverse, Janitor and arcos
 
-# Load Tidyverse, Janitor and arcos
-
-install.packages("tidyverse")
+#install.packages("tidyverse")
 library(tidyverse)
 
-install.packages("janitor")
+#install.packages("janitor")
 library(janitor)
 
-install.packages("arcos")
+#install.packages("arcos")
 library(arcos)
 
 ```
@@ -235,11 +235,6 @@ maryland_pills_per_year <- arcos_county_pills_per_year %>%
   select(buyer_county, year, dosage_unit)
 ```
 
-```{r}
-arcos_county_pills_per_year <- arcos_county_pills_per_year %>%
-  filter(buyer_state == "WV", (buyer_county %in% c("MINGO"))) %>%
-  select(buyer_county, year, dosage_unit)
-```
 
 Now let's build a graphic to compare them. 
 
@@ -320,19 +315,17 @@ Let's look at one more graph type.  We'll start with a different motivating ques
 Let's start by creating a slice of our data that only contains totals for each Maryland county in 2012.  
 
 ```{r}
-
-maryland_pills_2012 <- arcos_county_pills_per_year %>%
-  filter(buyer_state == "MD", year=="2012") %>%
+maryland_pills_2012 <-  arcos_county_pills_per_year %>%
+  filter(buyer_state=="MD", year=="2012") %>%
   select(buyer_county, year, dosage_unit)
 ```
-
 
 And then, let's use the county_population() function in the ARCOS R package to get a table with 2012 population for each Maryland county.
 
 ```{r}
 maryland_population_2012 <- county_population(key = key) %>%
   clean_names() %>%
-  filter(buyer_state == "MD", year=="2012") %>%
+  filter(buyer_state == "Md", year=="2012") %>%
   select(buyer_county, population)
 
 ```
