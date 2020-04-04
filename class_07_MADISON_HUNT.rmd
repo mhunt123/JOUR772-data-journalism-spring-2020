@@ -1,7 +1,7 @@
 ---
 title: "Class 07 | R continued"
-author: "Sean Mussenden"
-date: "3/26/2019"
+author: "Madison Hunt"
+date: "4/04/2020"
 output:
   html_document:
     toc: true
