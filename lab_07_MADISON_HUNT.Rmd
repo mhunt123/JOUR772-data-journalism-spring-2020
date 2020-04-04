@@ -462,9 +462,6 @@ geo_pills_population_county_2009 <- county_geodata_shifted %>%
 mapview(geo_pills_population_county_2009, zcol = "pills_per_person", legend = TRUE)
 
 
-
-
-
 ```
 
 **Task**: Make a static facet map, with one map per year between 2006 and 2012, *showing only Maryland counties*, colored based on the number of pills per person in each county in each year.  Provide a short writeup on what you find. What trends do you see?
