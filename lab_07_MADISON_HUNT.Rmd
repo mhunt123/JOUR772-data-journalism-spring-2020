@@ -82,25 +82,25 @@ We're also going to load two new packages: [mapview](https://r-spatial.github.io
 
 # Load Tidyverse, janitor and arcos, tidycensus, mapview, ggthemes, scales
 
-#library(tidyverse)
+library(tidyverse)
 #install.packages("janitor")
-#library(janitor)
-#library(arcos)
+library(janitor)
+library(arcos)
 
 #install.packages("tidycensus")
-#library(tidycensus)
+library(tidycensus)
 
 #install.packages("mapview")
-#library(mapview)
+library(mapview)
 
 #install.packages("ggthemes")
-#library(ggthemes)
+library(ggthemes)
 
 #install.packages("ggplot2")
-#library(ggplot2)
+library(ggplot2)
 
 #install.packages("scales")
-#library(scales)
+library(scales)
 
 
 
